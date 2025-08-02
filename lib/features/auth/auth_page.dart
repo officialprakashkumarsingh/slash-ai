@@ -97,11 +97,29 @@ class _AuthPageState extends ConsumerState<AuthPage> {
         );
         return;
       }
+      // Handle network connectivity issues
+      if (e.message?.contains('SocketException') == true || 
+          e.message?.contains('Failed host lookup') == true ||
+          e.message?.contains('network') == true) {
+        setState(
+          () => errorMessage = 'Network error: Cannot connect to GitHub API. Please check your internet connection and try again.',
+        );
+        return;
+      }
       setState(
         () => errorMessage = 'Failed to validate GitHub token: ${e.message}',
       );
       return;
     } catch (e) {
+      // Handle other connectivity issues
+      if (e.toString().contains('SocketException') || 
+          e.toString().contains('Failed host lookup') ||
+          e.toString().contains('network')) {
+        setState(
+          () => errorMessage = 'Network error: Cannot connect to GitHub API. Please check your internet connection and try again.',
+        );
+        return;
+      }
       setState(
         () => errorMessage = 'Failed to validate tokens: ${e.toString()}',
       );
