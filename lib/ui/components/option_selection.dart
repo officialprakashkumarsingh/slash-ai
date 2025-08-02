@@ -43,13 +43,13 @@ class OptionSelection extends StatelessWidget {
                           isSelected
                               ? colors.always8B5CF6
                               : unselectedColor ??
-                                  colors.always909090.withValues(alpha: 0.1),
+                                  colors.always909090.withOpacity(0.1),
                       border: Border.all(
                         color:
                             isSelected
                                 ? colors.always8B5CF6
                                 : unselectedColor ??
-                                    colors.always909090.withValues(alpha: 0.1),
+                                    colors.always909090.withOpacity(0.1),
                       ),
                       borderRadius: BorderRadius.circular(50),
                     ),

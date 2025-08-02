@@ -169,7 +169,7 @@ class _AuthPageState extends ConsumerState<AuthPage> {
                     constraints: const BoxConstraints(maxWidth: 400),
                     padding: const EdgeInsets.all(32),
                     decoration: BoxDecoration(
-                      color: colors.always343434.withValues(alpha: 0.25),
+                      color: colors.always343434.withOpacity(0.25),
                       borderRadius: BorderRadius.circular(24),
                     ),
                     child: Column(

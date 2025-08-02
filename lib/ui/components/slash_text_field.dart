@@ -75,7 +75,7 @@ class _SlashTextFieldState extends State<SlashTextField> {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
               decoration: BoxDecoration(
-                color: colors.alwaysEDEDED.withValues(alpha: 0.1),
+                color: colors.alwaysEDEDED.withOpacity(0.1),
                 border: Border.all(color: colors.always909090),
                 borderRadius: BorderRadius.circular(20),
               ),

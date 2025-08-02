@@ -117,7 +117,7 @@ class _PromptPageState extends ConsumerState<PromptPage> {
       builder: (context, colors, ref) {
         return Scaffold(
           appBar: AppBar(
-            backgroundColor: colors.always8B5CF6.withValues(alpha: 0.1),
+            backgroundColor: colors.always8B5CF6.withOpacity(0.1),
             title: Image.asset('assets/slash2.png', height: 100),
             centerTitle: false,
             toolbarHeight: 80,
@@ -125,7 +125,7 @@ class _PromptPageState extends ConsumerState<PromptPage> {
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
-                  color: colors.alwaysEDEDED.withValues(alpha: 0.1),
+                  color: colors.alwaysEDEDED.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: OptionSelection(
@@ -262,7 +262,7 @@ class _PromptPageState extends ConsumerState<PromptPage> {
                       slashIconButton(
                         asset: 'assets/icons/attach.svg',
                         hasContainer: false,
-                        color: colors.always909090.withValues(alpha: 0.2),
+                        color: colors.always909090.withOpacity(0.2),
                         onPressed:
                             promptState.isLoading
                                 ? () {}

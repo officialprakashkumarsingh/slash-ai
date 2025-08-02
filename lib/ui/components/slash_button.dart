@@ -60,7 +60,7 @@ class SlashButton extends StatelessWidget {
                   (validator == null ? true : validator!())
                       ? WidgetStateProperty.all(color ?? colors.always8B5CF6)
                       : WidgetStateProperty.all(
-                        (color ?? colors.always8B5CF6).withValues(alpha: 0.5),
+                        (color ?? colors.always8B5CF6).withOpacity(0.5),
                       ),
               shape: WidgetStateProperty.all(
                 RoundedRectangleBorder(
