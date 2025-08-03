@@ -551,7 +551,7 @@ class _ChatOverlay extends StatelessWidget {
     return Container(
       height: 32,
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.9),
+        color: Theme.of(context).colorScheme.primary.withOpacity(0.9),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
       ),
       child: Row(

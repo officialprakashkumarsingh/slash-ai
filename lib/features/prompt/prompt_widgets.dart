@@ -78,7 +78,7 @@ class ChatMessageBubble extends ConsumerWidget {
               msg.isUser
                   ? Theme.of(
                     context,
-                  ).colorScheme.primary.withValues(alpha: 0.12)
+                  ).colorScheme.primary.withOpacity(0.12)
                   : Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.circular(16),
           boxShadow:
@@ -86,7 +86,7 @@ class ChatMessageBubble extends ConsumerWidget {
                   ? []
                   : [
                     BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.04),
+                      color: Colors.black.withOpacity(0.04),
                       blurRadius: 8,
                       offset: const Offset(0, 2),
                     ),
@@ -113,7 +113,7 @@ class ChatMessageBubble extends ConsumerWidget {
                       !msg.isUser
                           ? Theme.of(
                             context,
-                          ).colorScheme.onSurface.withValues(alpha: 0.12)
+                          ).colorScheme.onSurface.withOpacity(0.12)
                           : null,
                   borderRadius: BorderRadius.circular(12),
                 ),

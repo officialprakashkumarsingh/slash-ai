@@ -69,7 +69,7 @@ class _SlashDropDownState extends State<SlashDropDown> {
                       : const EdgeInsets.symmetric(horizontal: 5, vertical: 0),
               decoration: BoxDecoration(
                 color:
-                    widget.color ?? colors.alwaysEDEDED.withValues(alpha: 0.1),
+                    widget.color ?? colors.alwaysEDEDED.withOpacity(0.1),
                 border: Border.all(color: widget.color ?? colors.always909090),
                 borderRadius: BorderRadius.circular(16),
               ),
